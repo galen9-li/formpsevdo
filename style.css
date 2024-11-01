@@ -1,0 +1,29 @@
+
+* {box-sizing: border-box;
+margin: 0;
+padding: 0;}
+
+header {display: flex; gap: 40px; position: fixed; top: 0; left: 0; border-bottom: 1px solid gray; padding: 10px; width: 100%; background: #fff;}
+
+.in {padding: 5px 15px;  display: flex; justify-content: center; align-items: center; font-size: 10px; width: 100%;border:  none; border-right: 1px solid #2774cd; height: 100%;}
+.ini { display: flex; justify-content: center; align-items: center; border: 1px solid #2774cd; border-radius: 3px; overflow: hidden; height: 100%; width: 100%;}
+.ini::after {content: ''; width: 30px; height: 100%; background: url(icon-search.svg) no-repeat center #2774cd; }
+
+
+
+main {margin-top: 70px;}
+
+.fo {display: flex; flex-direction: column; position: relative;  }
+.in:focus {outline: none;}
+ 
+
+.headline, .item {font-size: 10px;}
+.headline {margin: 5px;}
+.item { display: flex; justify-content: flex-start; align-items: center; padding: 5px;}
+
+.item::before {content: ''; width: 10px; height: 10px; background: url(icon-searchblue.svg); background-size: cover; margin-right: 5px;}
+.item:hover {background-color: rgb(177, 177, 244);}
+
+
+.alist {display: none;}
+.ini:focus-within .alist { display: inline-block; position: absolute;  background: #fff; top: 30px; width: 100%;  list-style: none; }
